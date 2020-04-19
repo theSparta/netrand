@@ -65,6 +65,8 @@ python -m coinrun.train_random --run-id myrun --save-interval 1 --num_levels 500
 
 # Test on unseen environments
 
+Please note that the `train_flag` is only set during evaluation to indicate that the evaluation is to be done using a different set of themes than the ones used for training.
+
 ```
 python -m coinrun.enjoy --test-eval --restore-id myrun -num-eval N -rep K -train_flag 1
 ```
